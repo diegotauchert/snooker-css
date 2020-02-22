@@ -1,33 +1,39 @@
-@keyframes strike{
+@keyframes shot{
   10%{
-    right:calc(10% - 500px);
+    right:calc(5% - 500px);
   }
   20%{
-    right: calc(10% - 480px)
+    right: calc(5% - 480px)
   }
   30%{
-    right: calc(10% - 500px)
+    right: calc(5% - 500px)
   }
   40%{
-    right: calc(10% - 480px)
+    right: calc(5% - 480px)
   }
   50%{
-    right: calc(10% - 500px)
+    right: calc(5% - 500px)
   }
   60%{
-    right: calc(10% - 480px)
+    right: calc(5% - 480px)
   }
   70%{
-    right: calc(10% - 500px)
+    right: calc(5% - 500px)
   }
   80%{
-    right: calc(10% - 480px)
+    right: calc(5% - 480px)
   }
   90%{
-    right: calc(10% - 600px)
+    right: calc(5% - 600px)
   }
   100%{
-    right: calc(10% - 460px)
+    right: calc(10% - 440px)
+  }
+}
+
+@keyframes poll-move-back{
+  100%{
+    right: calc(5% - 520px);
   }
 }
 

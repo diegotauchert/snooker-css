@@ -34,6 +34,9 @@ body{
   position: relative;
   width: 70%;
   height: 60%;
+  min-height: 500px;
+  max-height: 600px;
+  max-width: 960px;
   margin-right: 20%;
   background-clip: border-box;
   border:0;
@@ -292,10 +295,11 @@ body{
   background-color:#cea36c;
   position: absolute;
   top: calc(var(--top5) + 12px);
-  right: calc(10% - 500px);
+  right: calc(5% - 500px);
   border-radius: 30% 40% 30% 40%;
   z-index: 9;
-  animation: strike 6s ease 1 forwards;
+  animation: shot 6s ease 1 forwards,
+             poll-move-back .5s ease 1 6s forwards;
 }
 
 .poll div{
@@ -357,4 +361,10 @@ body{
   box-shadow: inset 4px 0 #000,
               inset 2px 2px 4px rgba(0,0,0,.2);
   border-radius:0 20% 0 20%; 
+}
+
+@media only screen and (max-width: 800px){
+  .ball-3{
+    animation: rotate360 4s ease-out 6.2s 1 forwards;
+  }
 }
